@@ -6,7 +6,7 @@
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   line-height: 1.6;
-  padding: 20;
+  padding: 20px;
 }
 .container {
   max-width: 1200px;
@@ -30,7 +30,7 @@ body {
   padding: 15px;
   margin-bottom: 20px;
 }
-.head-inner span {
+.header-inner span {
   margin-bottom: 10px;
 }
 .brand {
@@ -60,9 +60,7 @@ html {
 section {
   padding: 24px 0;
 }
-section {
-  list-style: none;
-}
+
 section + section {
   border-top: 1px solid #f1f5f9;
 }
@@ -81,11 +79,11 @@ section + section {
 }
 article {
   display: block;
-  /*background: #fff;
+  background: #fff;
   padding: 16px;
   border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  margin-bottom: 20px;*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
 }
 article h3 {
   margin: 0 0 8px;
