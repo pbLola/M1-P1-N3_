@@ -13,6 +13,8 @@ por âncoras."
   </head>
   <body>
     <header>
+      <img src="assets/img/logo.jpg" alt="Logotipo(placeholder)" />
+      <h1>Meu jornalzinho</h1>
       <nav aria-label="Navegação principal">
         <ul>
           <li><a href="#sobre">Sobre</a></li>
@@ -23,7 +25,8 @@ por âncoras."
       </nav>
     </header>
     <main>
-      <section id="sobre">
+      <h1>Atualizações & Notícias</h1>
+      <section id="titulo-sobre">
         <h2>Sobre esta página</h2>
         <p>
           Esta é uma página criada para praticar
@@ -35,34 +38,77 @@ por âncoras."
           <a href="#contato">Contato</a>
         </p>
       </section>
-      <section id="noticias">
-        <h2>Notícias</h2>
-        <article>
-          <h3>Projeto de estudo por ciclos</h3>
-          <p class="meta">
-            Publicado em <time datetime="2025-09-03"> 03 set 2025</time>
-          </p>
-          <p>
-            Organizei meu primeiro ciclo de estudos e defini para os próximos 7
-            dias.
-          </p>
-          <p><a href="#" target="_blank" rel="noopener">Ler mais</a></p>
-        </article>
-        <article>
-          <h3>Esboço do portifólio definido</h3>
-          <p class="meta">
-            Publicado em <time datetime="2025-08-28">28 ago 2025</time>
-          </p>
-          <p>
-            Rascunhei as seções do meu futuro portifólio e listei os projetos
-            que quero destacar
-          </p>
-          <p><a href="#" target="_blank" rel="noopener">Ver detalhes</a></p>
-        </article>
+      <section id="noticias" aria-labelledby="titulo-noticias">
+        <h2 id="titulo-noticias">Notícias</h2>
+        <ul>
+          <li>
+            <article>
+              <header>
+                <h3>Projeto de estudo por ciclos</h3>
+                <p class="meta">
+                  Publicado em <time datetime="2025-09-03"> 03 set 2025</time>
+                </p>
+              </header>
+              <img
+                class="thumb"
+                src=""
+                alt="Caderno aberto com anotações e um laptop do lado"
+              />
+              <p>
+                Organizei meu primeiro ciclo de estudos e defini para os
+                próximos 7 dias.
+              </p>
+              <p><a href="#" target="_blank" rel="noopener">Ler mais</a></p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <header>
+                <h3>Esboço do portifólio definido</h3>
+                <p class="meta">
+                  Publicado em <time datetime="2025-08-28">28 ago 2025</time>
+                </p>
+              </header>
+              <img
+                class="thumb"
+                src=""
+                alt="Esboço de wireframe de site desenhado em papel"
+              />
+              <p>
+                Rascunhei as seções do meu futuro portifólio e listei os
+                projetos que quero destacar
+              </p>
+              <p><a href="#" target="_blank" rel="noopener">Ver detalhes</a></p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <header>
+                <h3>Leituras recomendadas salvas</h3>
+                <p>
+                  Publicado em <time datetime="2025-08-20">20 ago 2025</date>
+                </p>
+              </header>
+              <p>Separei artigos introdutórios de HTML semântico e acessibilidade para revisar no próximo ciclo.</p>
+              <p><a href="#" target="_blank" rel="noopener">MDN — HTML</a></p>
+            </article>
+          </li>
+        </ul>
       </section>
 
-      <section id="artigos">
-        <h2>Artigos</h2>
+      <section id="artigos" aria-labelledby="titulo-artigos">
+        <h2 id="titulo-artigos">Artigos</h2>
+        <ul class="list">
+          <li>
+        <article>
+          <h3>Como organizar heading corretamente</h3>
+          <p>
+Um guia rápido sobre quando usar H1, H2, H3, e por isso ajuda leitores e motores de busca.
+          </p>
+          <p><a href="#" target="_blank" rel="noopener">Saiba mais</a></p>
+        </article>
+          </li>
+                    <li>
         <article>
           <h3>Âncoras e navegação interna acessível</h3>
           <p>
@@ -71,6 +117,10 @@ por âncoras."
           </p>
           <p><a href="#" target="_blank" rel="noopener">Saiba mais</a></p>
         </article>
+          </li>
+        </ul>
+      </section>
+
       </section>
       <section id="contato">
         <h2>Contato</h2>
