@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M1 · P1 · N3 — Página de Notícias</title>
+    <link rel="stylesheet" href="css/style.css"/>
 
     <meta
       name="description"
@@ -12,22 +13,24 @@ por âncoras."
     />
   </head>
   <body>
-    <header>
-      <img src="assets/img/logo.jpg" alt="Logotipo(placeholder)" />
-      <h1>Meu jornalzinho</h1>
-      <nav aria-label="Navegação principal">
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#noticias">Notícias</a></li>
-          <li><a href="#artigos">Artigos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
+    <header class="site-header">
+      <section class="container header-inner">
+      <section class="brand">
+<img src="assets/img/lolab.png" alt="Logotipo (placeholder) " />
+      <span style="font-size: 200%;">Meu jornalzinho</span>
+            </section>
+      <nav class="primary-nav" aria-label="Navegação principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#artigos">Artigos</a>
+            <a href="#contato">Contato</a>
       </nav>
+      </section>
     </header>
-    <main>
+    <main class="container" id="conteúdo">
       <h1>Atualizações & Notícias</h1>
-      <section id="titulo-sobre">
-        <h2>Sobre esta página</h2>
+      <section id="sobre">
+        <h2 id="titulo-sobre">Sobre esta página</h2>
         <p>
           Esta é uma página criada para praticar
           <strong>HTML semântico</strong> e navegação por âncoras
@@ -40,7 +43,7 @@ por âncoras."
       </section>
       <section id="noticias" aria-labelledby="titulo-noticias">
         <h2 id="titulo-noticias">Notícias</h2>
-        <ul>
+        <ul class="list">
           <li>
             <article>
               <header>
